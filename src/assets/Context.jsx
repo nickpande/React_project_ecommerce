@@ -3,7 +3,7 @@ import axios from './Axios'
 
 export const productContext = createContext()
 function Context(props) {
-    const[product ,setProducts] = useState(null);
+    const[product ,setProducts] = useState([]);
     const getproducts = async()=>{
         try {
             const {data} = await axios("/products")

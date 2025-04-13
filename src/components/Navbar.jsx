@@ -26,12 +26,12 @@ function Navbar() {
   
   return (
     <div className='h-screen  w-[15%] bg-zinc-100  flex  items-center flex-col'>
-      <button className=' mt-5 px-4 py-2 border border-blue-400'>Add new  Products</button>
+      <Link to="/create" className=' mt-5 px-4 py-2 border border-blue-400'>Add new  Products</Link>
       <hr />
       <hr className="w-full mt-4 border-gray-300" />
 
       <h1 className='text-2xl mt-4 font-semibold'>Category</h1>
-      <ul className='flex flex-col gap-1'>
+      <ul className='flex flex-col mt-3 gap-1'>
         {
           uniqueCat.map((cat,index)=>{
             return(
